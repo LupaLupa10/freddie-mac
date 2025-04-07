@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.env/
+.venv/
+venv/
+env/
+
+# Environment variable file
+.env
+
+# Output directories (raw and combined data)
+data/combined_dataset/
+data/raw_dataset/
+
+# Logs and debug files
+*.log
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks checkpoints (if using any)
+.ipynb_checkpoints/
+
+data/__pycache__/
