@@ -32,9 +32,12 @@ B
 │   └── plots/
 ├── report/
 │   ├── report.html  
-│   ├── report.py                        
+│   ├── report.py   
+│   └── results/                     
 ├── templates/
 │   ├── report.html.j2
+├── static/
+│   ├── style.css
 ├── .env                             
 ├── main.py                  
 └── README.md                 
@@ -145,4 +148,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-for commercial use of data, you need to contact freddie mac 
+For commercial use of the data, please contact Freddie Mac for licensing and authorization.
