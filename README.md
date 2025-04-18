@@ -1,6 +1,7 @@
-# 📊 Freddie Mac Loan Data Downloader
+# 📊 Freddie Mac 
 
-A Python CLI tool to download, extract, and consolidate Freddie Mac Single-Family Loan-Level Datasets — designed for researchers, analysts, and engineers working with mortgage data.
+A Python tool to download, extract, and consolidate Freddie Mac Single-Family Loan-Level Datasets — designed for researchers, analysts, and engineers working with mortgage data.
+B
 
 ## 🔧 Features
 
@@ -11,17 +12,30 @@ A Python CLI tool to download, extract, and consolidate Freddie Mac Single-Famil
 - ✅ CLI + YAML config support
 - ✅ Modular, testable design using `@dataclass`
 - ✅ Poetry-based for reproducible environments
+- ✅ Data Analysis (WIP)
+- ✅ Bayesian Model (WIP)
+- ✅ Report (WIP)
 
 ## 📁 Project Structure
 
 ```
+├── configs/
+├── core_utils/
+│   ├── arg_parser.py  
+│   ├── constants.py    
+│   └── config_loader.py   
 ├── data/
 │   ├── freddie_mac_data.py  
+│   ├── data_analysis.py  
 │   ├── combined_dataset/    
-│   └── raw_dataset/         
-├── .env                      
-├── arg_parser.py       
-├── constants.py         
+│   └── raw_dataset/
+│   └── plots/
+├── report/
+│   ├── report.html  
+│   ├── report.py                        
+├── templates/
+│   ├── report.html.j2
+├── .env                             
 ├── main.py                  
 └── README.md                 
 ```
@@ -37,8 +51,8 @@ A Python CLI tool to download, extract, and consolidate Freddie Mac Single-Famil
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/freddie-mac-downloader.git
-   cd freddie-mac-downloader
+   git clone https://github.com/LupaLupa10/freddie-mac.git
+   cd freddie-mac
    ```
 
 2. Install dependencies:
@@ -54,12 +68,30 @@ A Python CLI tool to download, extract, and consolidate Freddie Mac Single-Famil
 
 ## 💻 Usage
 
-### Basic Usage
+### Data
 
-Download data for a specific time range:
-
+To download data for a specific time range, use either command-line flags:
 ```bash
 python main.py --start-year 2023 --end-year 2024 --start-qtr 1 --end-qtr 2 --verbose
+```
+
+Or using a YAML config:
+```bash
+python3 main.py --config configs/freddie_mac.yaml
+```
+
+### View Report
+
+To view the HTML report generated via Jinja:
+
+Run a local server:
+```bash
+python -m http.server
+```
+
+Open in your browser: 
+```bash
+http://localhost:8000/report/report.html
 ```
 
 ### All Options
@@ -113,4 +145,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+for commercial use of data, you need to contact freddie mac 

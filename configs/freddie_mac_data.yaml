@@ -1,0 +1,9 @@
+username: ${FREDDIE_MAC_USERNAME}
+password: ${FREDDIE_MAC_PASSWORD}
+start_year: 2024
+end_year: 2024
+start_qtr: 1
+end_qtr: 2
+frequency: quarterly     
+verbose: true
+remove_unzipped: false

@@ -12,7 +12,6 @@ def parse_args():
     parser.add_argument("--end-qtr", type=int, default=4, choices=[1, 2, 3, 4], help="End quarter")
     parser.add_argument("--remove-unzipped", action="store_true", help="Delete raw txt files after processing")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose logging")
-
     return parser.parse_args()
 
 

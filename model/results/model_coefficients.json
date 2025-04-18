@@ -1,0 +1,10 @@
+{
+    "intercept": -9.543658145343748,
+    "coefficients": {
+        "credit_score": -0.8673191103427148,
+        "loan_age": 1.31808406903165,
+        "original_combined_loan_to_value": 0.16984918332919516,
+        "original_debt_to_income_ratio": 0.19987671135968665,
+        "current_interest_rate": 0.21060513541285003
+    }
+}
